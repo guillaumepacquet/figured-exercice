@@ -46,5 +46,8 @@ const submit = () => {
         <div v-if="price > 0">
             Your price is: {{price}}$
         </div>
+        <div v-else class="text-red-500 mt-2">
+            Sorry, the quantity applied exceeds the quantity on hand.
+        </div>
     </GuestLayout>
 </template>
